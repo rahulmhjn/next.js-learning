@@ -1,7 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Rahul Mahajan";
@@ -9,7 +7,7 @@ export const siteTitle = "Next.js Website";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="max-w-xl py-0 px-4 mx-auto mt-12 mb-24">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,18 +23,18 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="flex flex-col items-center">
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              className="rounded-full"
               height={144}
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className="text-2xl font-extrabold my-4 mx-0">{name}</h1>
           </>
         ) : (
           <>
@@ -45,16 +43,16 @@ export default function Layout({ children, home }) {
                 <Image
                   priority
                   src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
+                  className="rounded-full"
                   height={108}
                   width={108}
                   alt=""
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className="text-lg my-4 mx-0">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className="text-inherit hover:underline">{name}</a>
               </Link>
             </h2>
           </>
@@ -62,9 +60,9 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="mt-12 mx-0 mb-0">
           <Link href="/">
-            <a>← Back to home</a>
+            <a className="text-blue hover:underline">← Back to home</a>
           </Link>
         </div>
       )}
