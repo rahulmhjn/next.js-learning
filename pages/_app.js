@@ -20,20 +20,30 @@ export default function App({ Component, pageProps }) {
           </Link>
           <ul className="flex">
             <li className="">
-              <a className="ml-8 pb-1.5 hover:text-blue">Courses</a>
+              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                Courses
+              </a>
             </li>
             <li className="">
-              <a className="ml-8 pb-1.5 hover:text-blue">eBook</a>
+              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                eBook
+              </a>
             </li>
             <li className="">
-              <a className="ml-8 pb-1.5 hover:text-blue">Freelance Mastery</a>
+              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                Freelance Mastery
+              </a>
             </li>
             <li className="">
-              <a className="ml-8 pb-1.5 hover:text-blue">YouTube</a>
+              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                YouTube
+              </a>
             </li>
             <li className="">
               <Link href="/posts/first-post">
-                <a className="ml-8 pb-1.5 hover:text-blue">Want more?</a>
+                <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                  Want more?
+                </a>
               </Link>
             </li>
           </ul>
