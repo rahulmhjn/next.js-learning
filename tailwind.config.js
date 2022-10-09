@@ -12,7 +12,8 @@ module.exports = {
       xl: "1440px",
     },
     colors: {
-      blue: "#0070f3",
+      blue: "#3195ff",
+      black: "#000",
       purple: "#7e5bef",
       pink: "#ff49db",
       orange: "#ff7849",
@@ -33,12 +34,9 @@ module.exports = {
       lg: ["1.5rem", "1.4"],
       xl: ["2rem", "1.3"],
       "2xl": ["2.5rem", "1.2"],
+      "4xl": ["4rem", "1.4"],
     },
     extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
-      },
       borderRadius: {
         "4xl": "2rem",
       },

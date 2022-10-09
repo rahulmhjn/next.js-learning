@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Traversy Media | Learn Web Development</title>
       </Head>
       <section className="text-md">
         <p>
@@ -14,13 +14,21 @@ export default function Home() {
           Native / Angular and some other cool libraries and frameworks.
         </p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
+          (This is my workspace for building clones of popular websites using{" "}
           <a
             className="text-blue hover:underline"
-            href="https://nextjs.org/learn"
+            href="https://nextjs.org"
             target="_blank"
           >
-            our Next.js tutorial
+            Next.js
+          </a>{" "}
+          and{" "}
+          <a
+            className="text-blue hover:underline"
+            href="https://tailwindcss.com"
+            target="_blank"
+          >
+            tailwindcss
           </a>
           .)
         </p>
