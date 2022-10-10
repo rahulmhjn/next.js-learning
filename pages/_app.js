@@ -18,43 +18,86 @@ export default function App({ Component, pageProps }) {
               />
             </a>
           </Link>
-          <ul className="flex">
-            <li className="">
-              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+          <ul className="md:flex hidden space-x-9">
+            <li>
+              <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
                 Courses
               </a>
             </li>
-            <li className="">
-              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+            <li>
+              <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
                 eBook
               </a>
             </li>
-            <li className="">
-              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+            <li>
+              <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
                 Freelance Mastery
               </a>
             </li>
-            <li className="">
-              <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+            <li>
+              <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
                 YouTube
               </a>
             </li>
-            <li className="">
+            <li>
               <Link href="/posts/first-post">
-                <a className="ml-8 pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
                   Want more?
                 </a>
               </Link>
             </li>
           </ul>
+          {/* <!-- Hamburger Icon --> */}
+          <button
+            id="menu-btn"
+            className="block hamburger md:hidden focus:outline-none z-[1]"
+          >
+            <span className="hamburger-top z-[2]"></span>
+            <span className="hamburger-middle z-[2]"></span>
+            <span className="hamburger-bottom z-[2]"></span>
+          </button>
+        </div>
+
+        {/* <!-- Mobile Menu --> */}
+        <div className="md:hidden">
+          <div
+            id="overlay"
+            className="hidden fixed top-0 left-0 w-full h-full items-center justify-center"
+          >
+            <div
+              id="overlay1"
+              className="hidden bg-black/100 rounded-[50%] w-[200vw] h-[200vw] items-center justify-center flex-none"
+            >
+              <div
+                id="menu"
+                className="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+              >
+                <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                  Courses
+                </a>
+                <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                  eBook
+                </a>
+                <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                  Freelance Mastery
+                </a>
+                <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                  YouTube
+                </a>
+                <Link href="/posts/first-post">
+                  <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
+                    Want more?
+                  </a>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <header className="bg-[url('/images/bg.png')] h-[1100px] w-full bg-cover bg-center relative flex justify-center items-center px-[100px] py-0 text-center before:w-full before:h-full before:bg-black/70 before:absolute">
         <div className="w-[700px] my-0 mx-auto z-2 relative">
-          <h1 className="text-[20px] font-extrabold text-blue">
-            Traversy Media
-          </h1>
-          <h1 className="text-4xl font-extrabold">
+          <h1 className="text-[20px] font-black text-blue">Traversy Media</h1>
+          <h1 className="text-4xl font-black">
             WEB DEVELOPMENT COURSES FOR{" "}
             <span className="text-blue">EVERYONE</span>
           </h1>

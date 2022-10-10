@@ -15,3 +15,55 @@ body {
   box-sizing: border-box;
   margin: 0;
 }
+
+/* Hamburger Menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  transition: all 0.25s;
+  position: relative;
+  background: #3195ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 24px;
+  /* left: 0; */
+  width: 44px;
+  height: 2px;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(10px);
+}
+
+.hamburger-bottom {
+  transform: translateY(20px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
