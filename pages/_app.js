@@ -108,7 +108,7 @@ export default function App({ Component, pageProps }) {
           <button className="bg-blue py-[10px] px-[30px] inline-block rounded-md text-[15px] font-extrabold leading-10 border-solid	border-[#00000000] border hover:bg-[#00000000] hover:border-[#fff]">
             START LEARNING TODAY
           </button>
-          <div className="grid grid-cols-3 gap-[40px] mt-[120px]">
+          <div className="hidden md:grid grid-cols-3 gap-[40px] mt-[120px]">
             <div>
               <i className="fas fa-cogs fa-4x h-24 w-24 font-black text-[4em] inline-block leading-none	"></i>
               <h3 className="text-[50px] font-bold landing-[80px]">15</h3>
@@ -129,6 +129,34 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </header>
+      <section className="bg-blue text-white p-5 ">
+        <div className="max-w-6xl	flex justify-between items-center m-auto">
+          <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
+          <form className="flex items-center justify-center">
+            <input
+              type="text"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l rounded-r-0 pl-20 p-2.5"
+              placeholder="Email"
+            />
+            <button
+              type="submit"
+              className="inline-flex items-center py-2.5 px-3 text-sm font-medium text-white bg-black rounded-l-0	 border border-black"
+            >
+              NOTIFY ME
+            </button>
+          </form>
+        </div>
+      </section>
+      <section className="bg-[url('/images/bg-pattern-1.png')] p-[20px]">
+        <div className="max-w-[1100px] m-auto">
+          <h1 className="text-xl font-extrabold text-center mt-[30px] mb-[20px] mx-0">
+            <span className="text-blue">Latest</span> Courses
+          </h1>
+          <p className="text-[1.3rem] text-center mb-[30px] py-[10px]">
+            Hover over the course to see this months discount code
+          </p>
+        </div>
+      </section>
       <section className="bg-[url('/images/bg-pattern-1.png')]">
         <Component {...pageProps} />
       </section>
