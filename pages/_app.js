@@ -97,7 +97,7 @@ export default function App({ Component, pageProps }) {
       <header className="bg-[url('/images/bg.png')] h-[1100px] w-full bg-cover bg-center relative flex justify-center items-center px-[100px] py-0 text-center before:w-full before:h-full before:bg-black/70 before:absolute">
         <div className="w-[700px] my-0 mx-auto z-2 relative">
           <h1 className="text-[20px] font-black text-blue">Traversy Media</h1>
-          <h1 className="text-4xl font-black">
+          <h1 className="text-2xl md:text-4xl font-black">
             WEB DEVELOPMENT COURSES FOR{" "}
             <span className="text-blue">EVERYONE</span>
           </h1>
