@@ -62,7 +62,7 @@ export default function App({ Component, pageProps }) {
         <div className="md:hidden">
           <div
             id="overlay"
-            className="hidden fixed top-0 left-0 w-full h-full items-center justify-center"
+            className="hidden top-0 left-0 w-full h-full items-center justify-center"
           >
             <div
               id="overlay1"
@@ -94,7 +94,7 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </nav>
-      <header className="bg-[url('/images/bg.png')] h-[1100px] w-full bg-cover bg-center relative flex justify-center items-center px-[100px] py-0 text-center before:w-full before:h-full before:bg-black/70 before:absolute">
+      <header className="bg-[url('/images/bg.png')] h-[100vh] md:h-[1100px] w-full bg-cover bg-center relative flex justify-center items-center px-[100px] py-0 text-center before:w-full before:h-full before:bg-black/70 before:absolute">
         <div className="w-[700px] my-0 mx-auto z-2 relative">
           <h1 className="text-[20px] font-black text-blue">Traversy Media</h1>
           <h1 className="text-2xl md:text-4xl font-black">
