@@ -70,7 +70,7 @@ export default function App({ Component, pageProps }) {
             >
               <div
                 id="menu"
-                className="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+                className="absolute flex-col items-center hidden space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-lg"
               >
                 <a className="pb-1.5 cursor-pointer hover:text-blue hover:border-b-2 hover:border-solid">
                   Courses
