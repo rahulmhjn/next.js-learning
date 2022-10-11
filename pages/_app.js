@@ -129,7 +129,7 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </header>
-      <section className="bg-blue text-white p-5 ">
+      {/* <section className="bg-blue text-white p-5 ">
         <div className="max-w-6xl	flex justify-between items-center m-auto">
           <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
           <form className="flex items-center justify-center">
@@ -146,7 +146,7 @@ export default function App({ Component, pageProps }) {
             </button>
           </form>
         </div>
-      </section>
+      </section> */}
       <section className="bg-[url('/images/bg-pattern-1.png')] p-[20px]">
         <div className="max-w-[1100px] m-auto">
           <h1 className="text-xl font-extrabold text-center mt-[30px] mb-[20px] mx-0">
