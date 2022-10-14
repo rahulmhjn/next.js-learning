@@ -129,11 +129,11 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </header>
-      <section className="bg-blue text-white p-5 flex sm:flex-col md:flex-row">
+      <section className="bg-blue text-white p-5 flex flex-col md:flex-row">
         <div className="grow flex items-center justify-center">
           <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
         </div>
-        <form className="grow flex sm:justify-center md:justify-start items-center">
+        <form className="grow flex justify-center md:justify-start items-center">
           <input
             type="text"
             className="bg-gray-50 border border-gray-300 text-gray-900 inline rounded-l rounded-r-0 w-[60%] py-2.5 px-5"
