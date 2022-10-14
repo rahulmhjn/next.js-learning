@@ -129,30 +129,30 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </header>
-      {/* <section className="bg-blue text-white p-5 ">
-        <div className="max-w-6xl	flex justify-between items-center m-auto">
+      <section className="bg-blue text-white p-5 flex sm:flex-col md:flex-row">
+        <div className="grow flex items-center justify-center">
           <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
-          <form className="flex items-center justify-center">
-            <input
-              type="text"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-l rounded-r-0 pl-20 p-2.5"
-              placeholder="Email"
-            />
-            <button
-              type="submit"
-              className="inline-flex items-center py-2.5 px-3 text-sm font-medium text-white bg-black rounded-l-0	 border border-black"
-            >
-              NOTIFY ME
-            </button>
-          </form>
         </div>
-      </section> */}
-      <section className="bg-[url('/images/bg-pattern-1.png')] p-[20px]">
+        <form className="grow flex sm:justify-center md:justify-start items-center">
+          <input
+            type="text"
+            className="bg-gray-50 border border-gray-300 text-gray-900 inline rounded-l rounded-r-0 w-[60%] py-2.5 px-5"
+            placeholder="Email"
+          />
+          <button
+            onClick={(e) => e.preventDefault()}
+            className="items-center py-2.5 px-3 text-white bg-black rounded-l-0 rounded-r	 border border-black"
+          >
+            NOTIFY ME
+          </button>
+        </form>
+      </section>
+      <section className="bg-[url('/images/bg-pattern-1.png')] p-5">
         <div className="max-w-[1100px] m-auto">
-          <h1 className="text-xl font-extrabold text-center mt-[30px] mb-[20px] mx-0">
+          <h1 className="text-xl font-extrabold text-center mt-[1.875rem] mb-5 mx-0">
             <span className="text-blue">Latest</span> Courses
           </h1>
-          <p className="text-[1.3rem] text-center mb-[30px] py-[10px]">
+          <p className="text-[1.3rem] text-center mb-[1.875rem] py-2.5">
             Hover over the course to see this months discount code
           </p>
         </div>
