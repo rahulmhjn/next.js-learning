@@ -129,23 +129,25 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </header>
-      <section className="bg-blue text-white p-5 flex flex-col md:flex-row">
-        <div className="grow flex items-center justify-center">
-          <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
+      <section className="bg-blue text-white p-5">
+        <div className="max-w-[1100px] m-auto flex flex-col md:flex-row">
+          <div className="grow flex items-center justify-center md:justify-start">
+            <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
+          </div>
+          <form className="grow flex justify-center md:justify-start items-center">
+            <input
+              type="text"
+              className="bg-gray-50 border border-gray-300 text-gray-900 inline rounded-l rounded-r-0 w-[60%] py-2.5 px-5"
+              placeholder="Email"
+            />
+            <button
+              onClick={(e) => e.preventDefault()}
+              className="items-center py-2.5 px-3 text-white bg-black rounded-l-0 rounded-r	 border border-black"
+            >
+              NOTIFY ME
+            </button>
+          </form>
         </div>
-        <form className="grow flex justify-center md:justify-start items-center">
-          <input
-            type="text"
-            className="bg-gray-50 border border-gray-300 text-gray-900 inline rounded-l rounded-r-0 w-[60%] py-2.5 px-5"
-            placeholder="Email"
-          />
-          <button
-            onClick={(e) => e.preventDefault()}
-            className="items-center py-2.5 px-3 text-white bg-black rounded-l-0 rounded-r	 border border-black"
-          >
-            NOTIFY ME
-          </button>
-        </form>
       </section>
       <section className="bg-[url('/images/bg-pattern-1.png')] p-5">
         <div className="max-w-[1100px] m-auto">
@@ -321,6 +323,33 @@ export default function App({ Component, pageProps }) {
           <button className="bg-[#333] py-[10px] px-[30px] inline-block rounded-md text-[15px] font-extrabold leading-10 border-solid border-[#333] border hover:border-blue hover:bg-blue my-[2.5rem] mx-0 w-full">
             SHOW MORE
           </button>
+        </div>
+      </section>
+      <section className="bg-[#143f7d] text-[#fff] py-[2.5rem] px-[1.25rem] md:py-[3.125rem] md:px-0 text-[1.1rem] md:text-[1.3rem]">
+        <div className="mx-auto max-w-[1100px] flex flex-col md:flex-row items-center md:items-start">
+          <img
+            src="/images/ebook.png"
+            className="grow w-[18.75rem] md:w-[28.125rem] mx-auto mb-[2.5rem] md:my-0 md:ml-0 md:mr-[80px]"
+          />
+          <div className="grow flex flex-col items-center md:items-stretch m-auto">
+            <h4 className="text-[1.3rem]">Brad Traversy's</h4>
+            <h3 className="text-[2.8rem]">Web Dev Guide</h3>
+            <p className="my-2.5 mx-0 text-center md:text-left">
+              The most complete guide to web development technologies on the
+              planet.
+            </p>
+            <p className="my-2.5 mx-0 text-center md:text-left">
+              This guide also goes into different programming concepts, careers
+              and even mental health.
+            </p>
+            <a
+              href="https://traversy.gumroad.com/l/web-dev-guide"
+              target="_blank"
+              className="bg-black py-[5px] px-[25px] inline-block rounded-md text-[15px] font-extrabold leading-10 border-solid border-black border hover:border-[#333] hover:bg-[#333] mt-[1.25rem] w-[174.79px]"
+            >
+              GET IT FOR $9.99
+            </a>
+          </div>
         </div>
       </section>
       <section className="main-content">
