@@ -342,13 +342,15 @@ export default function App({ Component, pageProps }) {
               This guide also goes into different programming concepts, careers
               and even mental health.
             </p>
-            <a
-              href="https://traversy.gumroad.com/l/web-dev-guide"
-              target="_blank"
-              className="bg-black py-[5px] px-[25px] inline-block rounded-md text-[15px] font-extrabold leading-10 border-solid border-black border hover:border-[#333] hover:bg-[#333] mt-[1.25rem] w-[174.79px]"
-            >
-              GET IT FOR $9.99
-            </a>
+            <div>
+              <a
+                href="https://traversy.gumroad.com/l/web-dev-guide"
+                target="_blank"
+                className="bg-black py-[5px] px-[25px] block rounded-md text-[15px] font-extrabold leading-10 border-solid border-black border hover:border-[#333] hover:bg-[#333] mt-[1.25rem]"
+              >
+                GET IT FOR $9.99
+              </a>
+            </div>
           </div>
         </div>
       </section>
