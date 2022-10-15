@@ -67,3 +67,11 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+.main-content {
+  margin: 0;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1592887714077-1c2ca9cdcf48?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjU2MTIyMjI&ixlib=rb-1.2.1&q=80");
+  background-size: cover;
+  background-position: 20% 30%;
+}

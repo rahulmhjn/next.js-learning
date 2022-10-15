@@ -155,9 +155,175 @@ export default function App({ Component, pageProps }) {
           <p className="text-[1.3rem] text-center mb-[1.875rem] py-2.5">
             Hover over the course to see this months discount code
           </p>
+
+          {/* Latest Courses */}
+          <div className="flex justify-center flex-col md:flex-row">
+            {/* 1st card */}
+            <div className="flex-[1_1_100%] bg-[#222] px-[1.875rem] py-5 relative border border-solid border-[#333] rounded-[5px]">
+              <img
+                src="/images/courses/tailwind_small.png"
+                className="w-[3.75rem] top-2.5 right-2.5 absolute"
+              />
+              <div className="mb-2.5 h-[9.375rem] pt-[1.875rem]">
+                <p className="text-blue">BEGINNER</p>
+                <h3 className="text-md">Tailwind CSS From Scratch</h3>
+              </div>
+              <div className="flex">
+                <img
+                  src="/images/courses/udemy-logo.png"
+                  className="w-[1.875rem] mr-2.5"
+                />
+                <a
+                  href="https://www.udemy.com/course/tailwind-from-scratch/"
+                  target="_blank"
+                  className="no-underline	hover:text-[#ea5252]"
+                >
+                  View On Udemy
+                </a>
+              </div>
+            </div>
+
+            {/* 2nd card */}
+            <div className="flex-[1_1_100%] bg-[#222] px-[1.875rem] py-5 relative border border-solid border-[#333] rounded-[5px] my-[2.5rem] mx-0 md:my-0 md:mx-[2.5rem]">
+              <img
+                src="/images/courses/react_front_to_back_small.png"
+                className="w-[3.75rem] top-2.5 right-2.5 absolute"
+              />
+              <div className="mb-2.5 h-[9.375rem] pt-[1.875rem]">
+                <p className="text-blue">BEGINNER - INTERMEDIATE</p>
+                <h3 className="text-md">React Front To Back 2022</h3>
+              </div>
+              <div className="flex">
+                <img
+                  src="/images/courses/udemy-logo.png"
+                  className="w-[1.875rem] mr-2.5"
+                />
+                <a
+                  href="https://www.udemy.com/course/react-front-to-back-2022/?referralCode=4A622C7E48DB66154114"
+                  target="_blank"
+                  className="no-underline	hover:text-[#ea5252]"
+                >
+                  View On Udemy
+                </a>
+              </div>
+            </div>
+            {/* 3nd card */}
+            <div className="flex-[1_1_100%] bg-[#222] px-[1.875rem] py-5 relative border border-solid border-[#333] rounded-[5px]">
+              <img
+                src="/images/courses/50projects_small.png"
+                className="w-[3.75rem] top-2.5 right-2.5 absolute"
+              />
+              <div className="mb-2.5 h-[9.375rem] pt-[1.875rem]">
+                <p className="text-blue">BEGINNER</p>
+                <h3 className="text-md">
+                  50 Projects in 50 Days - HTML, CSS & JavaScript
+                </h3>
+              </div>
+              <div className="flex">
+                <img
+                  src="/images/courses/udemy-logo.png"
+                  className="w-[1.875rem] mr-2.5"
+                />
+                <a
+                  href="https://www.udemy.com/course/50-projects-50-days/?referralCode=684EE5F9DE1745B6428B"
+                  target="_blank"
+                  className="no-underline	hover:text-[#ea5252]"
+                >
+                  View On Udemy
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <h1 className="text-xl font-extrabold text-center mt-[3.125rem] mb-[1.875rem] mx-0">
+            <span className="text-blue">Popular</span> Courses
+          </h1>
+
+          {/* Popular Courses */}
+          <div className="flex justify-center flex-col md:flex-row">
+            {/* 1st card */}
+            <div className="flex-[1_1_100%] bg-[#222] px-[1.875rem] py-5 relative border border-solid border-[#333] rounded-[5px]">
+              <img
+                src="/images/courses/tailwind_small.png"
+                className="w-[3.75rem] top-2.5 right-2.5 absolute"
+              />
+              <div className="mb-2.5 h-[9.375rem] pt-[1.875rem]">
+                <p className="text-blue">BEGINNER</p>
+                <h3 className="text-md">Tailwind CSS From Scratch</h3>
+              </div>
+              <div className="flex">
+                <img
+                  src="/images/courses/udemy-logo.png"
+                  className="w-[1.875rem] mr-2.5"
+                />
+                <a
+                  href="https://www.udemy.com/course/tailwind-from-scratch/"
+                  target="_blank"
+                  className="no-underline	hover:text-[#ea5252]"
+                >
+                  View On Udemy
+                </a>
+              </div>
+            </div>
+
+            {/* 2nd card */}
+            <div className="flex-[1_1_100%] bg-[#222] px-[1.875rem] py-5 relative border border-solid border-[#333] rounded-[5px] my-[2.5rem] mx-0 md:my-0 md:mx-[2.5rem]">
+              <img
+                src="/images/courses/react_front_to_back_small.png"
+                className="w-[3.75rem] top-2.5 right-2.5 absolute"
+              />
+              <div className="mb-2.5 h-[9.375rem] pt-[1.875rem]">
+                <p className="text-blue">BEGINNER - INTERMEDIATE</p>
+                <h3 className="text-md">React Front To Back 2022</h3>
+              </div>
+              <div className="flex">
+                <img
+                  src="/images/courses/udemy-logo.png"
+                  className="w-[1.875rem] mr-2.5"
+                />
+                <a
+                  href="https://www.udemy.com/course/react-front-to-back-2022/?referralCode=4A622C7E48DB66154114"
+                  target="_blank"
+                  className="no-underline	hover:text-[#ea5252]"
+                >
+                  View On Udemy
+                </a>
+              </div>
+            </div>
+            {/* 3nd card */}
+            <div className="flex-[1_1_100%] bg-[#222] px-[1.875rem] py-5 relative border border-solid border-[#333] rounded-[5px]">
+              <img
+                src="/images/courses/50projects_small.png"
+                className="w-[3.75rem] top-2.5 right-2.5 absolute"
+              />
+              <div className="mb-2.5 h-[9.375rem] pt-[1.875rem]">
+                <p className="text-blue">BEGINNER</p>
+                <h3 className="text-md">
+                  50 Projects in 50 Days - HTML, CSS & JavaScript
+                </h3>
+              </div>
+              <div className="flex">
+                <img
+                  src="/images/courses/udemy-logo.png"
+                  className="w-[1.875rem] mr-2.5"
+                />
+                <a
+                  href="https://www.udemy.com/course/50-projects-50-days/?referralCode=684EE5F9DE1745B6428B"
+                  target="_blank"
+                  className="no-underline	hover:text-[#ea5252]"
+                >
+                  View On Udemy
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <button className="bg-[#333] py-[10px] px-[30px] inline-block rounded-md text-[15px] font-extrabold leading-10 border-solid border-[#333] border hover:border-blue hover:bg-blue my-[2.5rem] mx-0 w-full">
+            SHOW MORE
+          </button>
         </div>
       </section>
-      <section className="bg-[url('/images/bg-pattern-1.png')]">
+      <section className="main-content">
         <Component {...pageProps} />
       </section>
       <footer></footer>
