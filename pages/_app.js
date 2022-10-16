@@ -342,7 +342,7 @@ export default function App({ Component, pageProps }) {
               This guide also goes into different programming concepts, careers
               and even mental health.
             </p>
-            <div>
+            <div className="flex justify-start">
               <a
                 href="https://traversy.gumroad.com/l/web-dev-guide"
                 target="_blank"
