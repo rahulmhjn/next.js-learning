@@ -131,18 +131,20 @@ export default function App({ Component, pageProps }) {
       </header>
       <section className="bg-blue text-white p-5">
         <div className="max-w-[1100px] m-auto flex flex-col md:flex-row">
-          <div className="grow flex items-center justify-center md:justify-start">
-            <h1 className="text-lg font-extrabold">NOTIFY ME OF NEW COURSES</h1>
+          <div className="basis-[40%] flex items-center justify-center md:justify-start">
+            <h1 className="text-lg font-extrabold mb-[1.25rem] md:mb-0">
+              NOTIFY ME OF NEW COURSES
+            </h1>
           </div>
-          <form className="grow flex justify-center md:justify-start items-center">
+          <form className="basis-[60%] flex justify-center items-center">
             <input
               type="text"
-              className="bg-gray-50 border border-gray-300 text-gray-900 inline rounded-l rounded-r-0 w-[60%] py-2.5 px-5"
+              className="bg-gray-50 border border-gray-300 text-gray-900 inline rounded-l rounded-r-none w-[50%] md:w-[60%] py-[0.75rem] px-2.5"
               placeholder="Email"
             />
             <button
               onClick={(e) => e.preventDefault()}
-              className="items-center py-2.5 px-3 text-white bg-black rounded-l-0 rounded-r	 border border-black"
+              className="items-center py-[0.3125rem] px-6 text-white text-[15px] leading-10	 bg-black rounded-l-none rounded-r	border border-black hover:bg-[#333]"
             >
               NOTIFY ME
             </button>
